@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clock App</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.6/css/all.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body id="body">
+  <div class="container" id="clock">
+    <div class="circle">
+      <div class="wrapcontent">
+        <h1>
+          <div class="time">
+            <span id="hours"></span>
+            <span class="colon">:</span>
+            <span id="minutes"></span>
+            <span class="colon">:</span>
+            <span id="seconds"></span>
+          </div>
+        </h1>
+
+        <p>
+          <div class="date">
+            <span id="month"></span>
+            <span id="day"></span>
+            <span id="year"></span>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="center">
+      <a href="#stopwatch" style="margin: auto;">
+      <i class="fas fa-angle-double-down fa-4x orange"></i>
+  </a>
+    </div>
+  </div>
+
+  <div class="container" id="stopwatch">
+    <div class="circle">
+      <div class="wrapcontent">
+        <h1><span id="seconds2">00</span>:<span id="tens2">00</span></h1>
+        <button id="button-start" class="ghostBtn">Start</button>
+        <button id="button-stop" class="ghostBtn">Stop</button>
+        <button id="button-reset" class="ghostBtn">Reset</button>
+      </div>
+    </div>
+    <div class="center">
+      <a href="#countdown" style="margin: auto;">
+      <i class="fas fa-angle-double-down fa-4x orange"></i>
+  </a>
+    </div>
+  </div>
+  </div>
+
+  <!--Countdown-->
+  <div class="container" id="countdown">
+    <div class="circle">
+      <div class="wrapcontent">
+        <h1>
+          <div class="time">
+            <span id="hours3"></span>
+            <span class="colon">:</span>
+            <span id="minutes3"></span>
+            <span class="colon">:</span>
+            <span id="seconds3"></span>
+          </div>
+        </h1>
+        <p>
+          <div class="date">
+            <span id="days3"></span>
+        </div>
+        </p>
+      </div>
+    </div>
+    <br/>
+    <div class="center">
+      <input id="endtime" placeholder="yyyy-mm-dd" />
+      <br>
+      <br>
+      <button class="ghostBtn" id="Submit">Submit</button>
+    </div>
+  </div>
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

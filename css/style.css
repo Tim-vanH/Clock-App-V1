@@ -1,0 +1,114 @@
+body{
+  animation-name: color;
+	animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+}
+
+.orange{
+  color: #F9A03F;
+  margin-top: 20%;
+}
+
+.center{
+  text-align: center;
+  margin: auto;
+}
+
+@keyframes color {
+	0% {
+	  background-color: #0A4B83;
+	}
+	25% {
+		background-color: #006FA0;
+	}
+	50% {
+	  background-color: #00264F;
+	}
+  75% {
+		background-color: #006FA0;
+	}
+  100% {
+	  background-color: #0A4B83;
+	}
+}
+
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  background-color: none;
+  color: #F9A03F;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  border: 2px solid #F9A03F;
+  margin-top: 25%;
+}
+
+.circle:hover, .ghostBtn:hover{
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   border: 2px solid white;
+} 
+
+  h1 {
+    font-size: 3rem;
+    vertical-align: center;
+    margin-top: 32.5%;
+  }
+  
+  p {
+    font-size: 2rem;
+    color: F9A03F;
+    text-align: center;
+}
+
+.ghostBtn{
+  border: 1.5px solid #F9A03F;
+  background: none;
+  color: #F9A03F;
+  border-radius: 50%;
+  padding: 2%;
+  margin: 1%;
+}
+
+input{
+  width: 15rem;
+  height: 2rem;
+  background: none;
+  border: 1.5px solid #F9A03F;
+  border-radius: 25%;
+  text-align: center;
+  margin: auto;
+  color: #F9A03F;
+}
+
+@media only screen and (min-width: 481px) {
+h1 {
+    font-size: 1.2em;
+    line-height: 1em;
+ }
+ p {
+    font-size: 1em;
+    line-height: 1em;
+ }
+}
+
+@media only screen and (min-width: 768px) {
+h1 {
+    font-size: 3rem;
+    line-height: 1em;
+ }
+ p {
+    font-size: 2em;
+    line-height: 1em;
+  }
+}
